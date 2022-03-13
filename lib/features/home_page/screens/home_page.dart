@@ -16,8 +16,8 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: Get.height,
-        width: Get.width,
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
 
         color: const Color.fromRGBO(130, 133, 143, 1),
         // color: _color,
