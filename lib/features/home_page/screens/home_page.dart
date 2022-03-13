@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:subscription_app/core/constans.dart';
 import 'package:subscription_app/core/subscription_content.dart';
