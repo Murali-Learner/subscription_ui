@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+TextEditingController emailController = TextEditingController();
+TextEditingController passwordController = TextEditingController();
+
 Container inputFields() {
   return Container(
     padding: const EdgeInsets.all(5),
@@ -23,6 +26,7 @@ Container loginPassword() {
   return Container(
     padding: const EdgeInsets.all(8.0),
     child: TextField(
+      controller: passwordController,
       decoration: InputDecoration(
         prefixIcon: Text(
           "*",
@@ -51,6 +55,7 @@ Container loginEmail() {
       ),
     ),
     child: TextField(
+      controller: emailController,
       decoration: InputDecoration(
         prefixIcon: Text(
           "@",

@@ -4,7 +4,7 @@ import 'package:subscription_app/core/subscription_content.dart';
 
 Text subscriptionName(int index) {
   return Text(
-    subscription[index]["name"],
+    subscriptionItems[index]["name"],
     style: GoogleFonts.eczar(
       fontSize: 35,
       fontWeight: FontWeight.w500,

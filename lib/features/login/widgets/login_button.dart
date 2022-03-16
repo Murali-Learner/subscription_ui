@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:subscription_app/features/home_page/screens/home_page.dart';
 
 Widget loginButtton(BuildContext context) {
   return InkWell(
     onTap: () {
-      Navigator.push(context, MaterialPageRoute(
-        builder: (context) {
-          return Homepage();
-        },
-      ));
+      Get.toNamed(Homepage.id);
     },
     child: Container(
       height: 50,

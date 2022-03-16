@@ -19,7 +19,7 @@ Container buyButton(int index) {
           style: GoogleFonts.acme(
             fontSize: 20,
             fontWeight: FontWeight.w500,
-            color: subscription[index]["color"],
+            color: subscriptionItems[index]["color"],
           ),
         ),
         const SizedBox(
@@ -27,7 +27,7 @@ Container buyButton(int index) {
         ),
         Icon(
           Icons.arrow_forward_ios_sharp,
-          color: subscription[index]["color"],
+          color: subscriptionItems[index]["color"],
           size: 18,
         )
       ],

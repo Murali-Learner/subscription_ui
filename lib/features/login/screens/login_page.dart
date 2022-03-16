@@ -9,6 +9,8 @@ import 'package:subscription_app/features/login/widgets/login_light2.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
+  static const String id = "LoginPage";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

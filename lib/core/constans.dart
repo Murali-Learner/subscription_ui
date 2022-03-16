@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AppFonts {
   static const String quicksand = 'Quicksand';
+}
+
+class Measurements {
+  static double screenHeight = Get.height;
+  static double screenWidth = Get.width;
 }
 
 class AppImages {
