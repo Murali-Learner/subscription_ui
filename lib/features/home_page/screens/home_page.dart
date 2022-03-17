@@ -34,6 +34,7 @@ class Homepage extends StatelessWidget {
           child: Stack(
             children: [
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: Measurements.screenHeight * 0.9,

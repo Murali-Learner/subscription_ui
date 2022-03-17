@@ -28,6 +28,8 @@ Container loginPassword(passwordController) {
     padding: const EdgeInsets.all(8.0),
     child: TextField(
       controller: passwordController,
+      keyboardType: TextInputType.visiblePassword,
+      enableSuggestions: true,
       decoration: InputDecoration(
         prefixIcon: Text(
           "*",
@@ -57,6 +59,8 @@ Container loginEmail(emailController) {
     ),
     child: TextField(
       controller: emailController,
+      keyboardType: TextInputType.emailAddress,
+      enableSuggestions: true,
       decoration: InputDecoration(
         prefixIcon: Text(
           "@",
