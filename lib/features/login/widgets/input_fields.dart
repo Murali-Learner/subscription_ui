@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-TextEditingController emailController = TextEditingController();
-TextEditingController passwordController = TextEditingController();
-
-Container inputFields() {
+Container inputFields(TextEditingController emailController,
+    TextEditingController paawordController) {
   return Container(
     padding: const EdgeInsets.all(5),
     decoration: BoxDecoration(
@@ -17,12 +15,15 @@ Container inputFields() {
               offset: Offset(0, 10))
         ]),
     child: Column(
-      children: <Widget>[loginEmail(), loginPassword()],
+      children: <Widget>[
+        loginEmail(emailController),
+        loginPassword(paawordController)
+      ],
     ),
   );
 }
 
-Container loginPassword() {
+Container loginPassword(passwordController) {
   return Container(
     padding: const EdgeInsets.all(8.0),
     child: TextField(
@@ -46,7 +47,7 @@ Container loginPassword() {
   );
 }
 
-Container loginEmail() {
+Container loginEmail(emailController) {
   return Container(
     padding: const EdgeInsets.all(8.0),
     decoration: BoxDecoration(

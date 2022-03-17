@@ -5,6 +5,7 @@ void disposeKeyboard() {
   FocusManager.instance.primaryFocus?.unfocus();
 }
 
-void showToast({String? message}) {
-  Fluttertoast.showToast(msg: message!);
+void showToast({required String message}) {
+  Fluttertoast.showToast(
+      msg: message, backgroundColor: const Color.fromRGBO(51, 51, 51, 1));
 }

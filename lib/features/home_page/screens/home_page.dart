@@ -13,18 +13,13 @@ import 'package:subscription_app/features/home_page/widgets/subscription_price.d
 import 'package:subscription_app/features/subscription_screen/features/subscription_page.dart';
 
 // ignore: must_be_immutable
-class Homepage extends StatefulWidget {
-  Homepage({Key? key}) : super(key: key);
+
+class Homepage extends StatelessWidget {
+  CarouselController carouselController = CarouselController();
   HomeLogic logic = HomeLogic();
   static const String id = "Homepage";
 
-  @override
-  State<Homepage> createState() => _HomepageState();
-}
-
-class _HomepageState extends State<Homepage> {
-  CarouselController carouselController = CarouselController();
-
+  Homepage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,12 +34,11 @@ class _HomepageState extends State<Homepage> {
           child: Stack(
             children: [
               Column(
-                // crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Container(
-                    height: Measurements.screenHeight * 0.85,
+                    height: Measurements.screenHeight * 0.9,
                     width: Measurements.screenWidth,
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     alignment: Alignment.center,
                     child: ListView.separated(
                       physics: const NeverScrollableScrollPhysics(),
@@ -66,7 +60,7 @@ class _HomepageState extends State<Homepage> {
                               shadowColor: Colors.white,
                               child: InkWell(
                                 onTap: () {
-                                  widget.logic.onCardPressed(index);
+                                  logic.onCardPressed(index);
                                 },
                                 child: Container(
                                   height: Measurements.screenHeight * 0.25,

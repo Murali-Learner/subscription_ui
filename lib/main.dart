@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:subscription_app/features/home_page/screens/home_page.dart';
 
 import 'package:subscription_app/features/login/screens/login_page.dart';
-import 'package:subscription_app/features/login/widgets/input_fields.dart';
 import 'package:subscription_app/features/subscription_screen/features/subscription_page.dart';
 
 void main() {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Homepage.id: (context) => Homepage(),
         LoginPage.id: (context) => LoginPage(),
-        SubscriptionScreen.id: (context) => SubscriptionScreen(),
+        SubscriptionScreen.id: (context) => const SubscriptionScreen(),
       },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

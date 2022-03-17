@@ -10,6 +10,11 @@ class Measurements {
   static double screenWidth = Get.width;
 }
 
+class TestCredentials {
+  static const String testEmail = "muralikrishna@gmail.com";
+  static const String testpassword = "murali1234";
+}
+
 class AppImages {
   static _IllustrationImages illustrations = const _IllustrationImages();
   static _MoodImages mood = const _MoodImages();
@@ -34,6 +39,8 @@ class _MoodImages {
   String get loginClock => 'assets/images/clock.png';
   String get loginLight1 => 'assets/images/light-1.png';
   String get loginLight2 => 'assets/images/light-2.png';
+  String get celeb1 => 'assets/images/celeb1.png';
+  String get celeb2 => 'assets/images/celeb2.png';
 }
 
 class _MoodGradients {
